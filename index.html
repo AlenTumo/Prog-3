@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <meta charset="utf8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+
+        div {
+            display: inline-block;
+        }
+
+        h1 {
+            padding: 20px;
+            text-align: center;
+        }
+
+        body {
+            font-family: 'Noto Sans', sans-serif !important;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <h1>Ծրագրավորում III Երևան</h1>
+            </tr>
+            <tr>
+                <h1>Ալեն Ավագյան</h1>
+            </tr>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Գույն</th>
+                <th scope="col">Նկարագրություն</th>
+                <th scope="col">Ծնվել է</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td scope="row" style="background-color:green;"></td>
+                <td>Կանաչը խոտն է, որը բազմանում է 4 ցիկլը մեկ,մահանում է երբ նրան ուտում է խոտակերը: </td>
+                <td id="grassCount"></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td scope="row" style="background-color:orange;"></td>
+                <td>Դեղինը խոտակերն է, որը բազմանում է բազմանում է մոտակա տարածքներում, երբ էներգիան 10֊ից ավել է, մահանում է
+                    երբ նրան ուտում է գիշատիչը:</td>
+                <td id="grassEaterCount"></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td scope="row" style="background-color:red;"></td>
+                <td>Կարմիրը գիշատիչն է, որը բազմանում է մոտակա տարածքներում, երբ էներգիան 10֊ից ավել է,	սատկում է, երբ էներգիան փոքր է 0֊ից
+
+                <td id="gishatichCount"></td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td scope="row" style="background-color:blue;"></td>
+                <td>Կապույտը գերհզորն է, բազմանում է մոտակա տարածքներում, երբ էներգիան 10֊ից ավել է, մահանում է, երբ էներգիան փոքր է 0֊ից
+                    </td>
+                <td id="gerhzorCount"></td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td scope="row" style="background-color:yellow;"></td>
+                <td>Դեղինը գայլն է, բազմանում է մոտակա տարածքներում, երբ էներգիան 9֊ից ավել է, մահանում է, երբ էներգիան փոքր է 0֊ից
+                    </td>
+                <td id="gaylCount"></td>
+            </tr>
+        </tbody>
+    </table>
+    <h1 id="season"></h1>
+    <script src="p5.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
